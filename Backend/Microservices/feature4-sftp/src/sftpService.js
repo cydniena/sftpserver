@@ -32,7 +32,7 @@
 
 // module.exports = { fetchTransactionsFromSFTP };
 
-const Client = require('ssh2');
+const Client = require('ssh2-sftp-client');
 const fs = require('fs');
 const path = require('path');
 const sftpConfig = require('../config/sftpConfig');
