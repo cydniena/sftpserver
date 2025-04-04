@@ -9,13 +9,12 @@ const port = 5002;
 
 app.use(express.json());
 app.use(cors()); 
-console.log(process.env.DB_HOST);
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "transactions_db",
+  host: "localhost",
+  user: "root",
+  password: "YourNewSecureP@ssw0rd!",
+  database: "transactions_db",
 });
 
 db.connect((err) => {

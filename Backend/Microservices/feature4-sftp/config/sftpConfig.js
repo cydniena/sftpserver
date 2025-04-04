@@ -11,7 +11,7 @@
 // };
 
 const fs = require('fs'); 
-require('dotenv').config();
+// require('dotenv').config();
 
 module.exports = {
   host: '18.140.63.244', // EC2 public IP
