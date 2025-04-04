@@ -47,7 +47,7 @@ function TransactionsSftp() {
     setFetchStatus(null);
     try {
       const response = await axios.post(
-        "http://47.129.34.58:5002/fetch-transactions"
+        "http://18.140.63.244:5002/fetch-transactions"
       );
       console.log("Transactions fetched successfully", response.data);
 
