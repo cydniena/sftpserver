@@ -1,37 +1,38 @@
+// const Client = require('ssh2');
+// const fs = require('fs');
+// const path = require('path');
+// const sftpConfig = require('../config/sftpConfig');
+// const { insertTransaction } = require('./dbService');
+
+// async function fetchTransactionsFromSFTP() {
+//   const sftp = new Client();
+//   try {
+//     await sftp.connect(sftpConfig);
+
+//     const filePath = path.join(__dirname, '../data/transactions.json');
+//     await sftp.fastGet(sftpConfig.remotePath + 'transactions.json', filePath);
+
+//     console.log('Reading and parsing transactions file...');
+//     const transactions = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+//     console.log('Inserting transactions into the database...');
+//     for (const transaction of transactions) {
+//       await insertTransaction(transaction);
+//     }
+
+//     console.log('Transactions successfully inserted into the database.');
+//     return { success: true, message: 'Transactions successfully inserted into the database.' };
+//   } catch (error) {
+//     console.error('SFTP Error:', error);
+//     return { success: false, message: 'Failed to fetch transactions.' };
+//   } finally {
+//     sftp.end();
+//   }  
+// }
+
+// module.exports = { fetchTransactionsFromSFTP };
+
 const Client = require('ssh2');
-const fs = require('fs');
-const path = require('path');
-const sftpConfig = require('../config/sftpConfig');
-const { insertTransaction } = require('./dbService');
-
-async function fetchTransactionsFromSFTP() {
-  const sftp = new Client();
-  try {
-    await sftp.connect(sftpConfig);
-
-    const filePath = path.join(__dirname, '../data/transactions.json');
-    await sftp.fastGet(sftpConfig.remotePath + 'transactions.json', filePath);
-
-    console.log('Reading and parsing transactions file...');
-    const transactions = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-
-    console.log('Inserting transactions into the database...');
-    for (const transaction of transactions) {
-      await insertTransaction(transaction);
-    }
-
-    console.log('Transactions successfully inserted into the database.');
-    return { success: true, message: 'Transactions successfully inserted into the database.' };
-  } catch (error) {
-    console.error('SFTP Error:', error);
-    return { success: false, message: 'Failed to fetch transactions.' };
-  } finally {
-    sftp.end();
-  }  
-}
-
-module.exports = { fetchTransactionsFromSFTP };
-const Client = require('ssh2-sftp-client');
 const fs = require('fs');
 const path = require('path');
 const sftpConfig = require('../config/sftpConfig');
