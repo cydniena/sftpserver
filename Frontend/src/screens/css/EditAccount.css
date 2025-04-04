@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh; /* Ensures full viewport height */
+  padding: 20px;
+  align-items: stretch; /* Makes sure both children stretch to the same height */
+}
+
+/* Content Box */
+.content-box {
+  flex: 2;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px 0px 0px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: #6B7888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  font-weight: bold;
+  width: 40vw;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.edit-button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #e0e0e0;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9FAFC;
+  border-radius: 0px 30px 30px 0px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.transactions {
+  margin: 50px;
+}
+
+.theader {
+  margin-bottom: 30px;
+}
+
+.search-bar-container {
+  display: flex;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 12px 40px;
+  font-size: 16px;
+  background-color: #6E45C9;
+  color: white;
+  border: 1px solid #6E45C9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #5a3c9b;
+}
+
+table {
+  border-collapse: separate;
+  width: 50%;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+  color: #3A3A49;
+}
+
+.row {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+td {
+  padding: 12px;
+}
+
+/* Row styles for data rows */
+tbody tr {
+  border: 1px solid black;
+  /* Black border around data rows */
+  border-radius: 8px;
+  /* Rounded corners for data rows */
+}
+
+td {
+  padding: 12px;
+}
+
+/* Custom Button Styling */
+button {
+  background-color: #6E45C9;
+  color: white;
+  padding: 12px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a3c9b;
+}
+
+/* Status color styles */
+.status-completed {
+  color: green;
+  /* Red color for "Completed" */
+}
+
+.status-pending {
+  color: orange;
+  /* Yellow color for "Pending" */
+}
+
+.status-failed {
+  color: red;
+  /* Red color for "Failed" */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-list li {
+  margin-bottom: 30px;
+  color: #273240;
+}
+
+.activity-user {
+  font-weight: bold;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: gray;
+  margin-left: 5px;
+  text-align: right;
+}
+
+.progress-bar {
+  height: 3px;
+  background-color: #e0e0e0;
+  margin-top: 5px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 100%;
+}
+
+.purple {
+  background-color: #6a0dad;
+}
+
+.admin-dashboard {
+  margin-top: auto;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+/* Admin Profile */
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+}
+
+.admin-name {
+  font-weight: bold;
+}
+
+.admin-email {
+  font-size: 12px;
+  color: gray;
+}
+
+.last-updated {
+  font-size: 14px;
+
+}

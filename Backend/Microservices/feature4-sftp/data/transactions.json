@@ -1,0 +1,10 @@
+[
+    {
+      "transaction_id": "TXN1001",
+      "client_id": "C001",
+      "amount": 500.75,
+      "transaction_date": "2025-02-23 12:30:00",
+      "transaction_type": "deposit",
+      "transaction_status": "completed"
+    }
+  ]
