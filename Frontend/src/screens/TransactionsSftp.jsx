@@ -17,7 +17,7 @@ function TransactionsSftp() {
     const fetchTransactions = async () => {
       try {
         const response = await axios.get(
-          "http://47.129.34.58:5002/api/transactions"
+          "http://127.0.0.1:5002/api/transactions"
         );
         setTransactions(response.data);
         setFilteredTransactions(response.data);
@@ -52,7 +52,7 @@ function TransactionsSftp() {
       console.log("Transactions fetched successfully", response.data);
 
       const updatedTransactions = await axios.get(
-        "http://47.129.34.58:5002/api/transactions"
+        "http://127.0.0.1:5002/api/transactions"
       );
       setTransactions(updatedTransactions.data);
       setFilteredTransactions(updatedTransactions.data);
